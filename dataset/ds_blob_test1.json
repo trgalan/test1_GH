@@ -1,0 +1,32 @@
+{
+	"name": "ds_blob_test1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_test1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "test1_AdvWrk_20.csv",
+				"container": "test1container66"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
