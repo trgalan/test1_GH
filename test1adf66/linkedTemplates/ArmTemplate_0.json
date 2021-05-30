@@ -55,12 +55,20 @@
 					"referenceName": "ls_blob_test1",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"xFileName": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "test1_AdvWrk_20.csv",
+						"fileName": {
+							"value": "@dataset().xFileName",
+							"type": "Expression"
+						},
 						"container": "test1container66"
 					},
 					"columnDelimiter": ",",
@@ -95,7 +103,9 @@
 							"dataset": {
 								"referenceName": "ds_blob_test1",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"xFileName": "test1_AdvWrk_20.csv"
+								}
 							},
 							"fieldList": [
 								"itemName",
