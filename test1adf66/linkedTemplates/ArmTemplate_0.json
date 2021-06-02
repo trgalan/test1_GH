@@ -159,7 +159,7 @@
 								},
 								"RecordInsertDate": {
 									"value": {
-										"value": "@utcnow()",
+										"value": "@datetime.now",
 										"type": "Expression"
 									},
 									"type": "DateTime"
