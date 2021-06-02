@@ -98,7 +98,7 @@
 								},
 								"RecordInsertDate": {
 									"value": {
-										"value": "@convertTimeZone(utcnow(),'UTC','Central Time','yyyy/MM/dd HH:mm')",
+										"value": "@convertTimeZone(utcnow(),'UTC','southcentralus','yyyy/MM/dd HH:mm')",
 										"type": "Expression"
 									},
 									"type": "DateTime"
